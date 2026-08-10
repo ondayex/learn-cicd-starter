@@ -28,7 +28,7 @@ jobs:
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
       - name: Run database migration
-        run: ./migrateup.sh
+        run: ./scripts/migrateup.sh
 
       - name: GCP auth
         uses: google-github-actions/auth@v2
